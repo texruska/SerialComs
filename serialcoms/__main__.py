@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
+"""SerialComs package"""
+
 from typing import Callable
 
 import serial
 
 class SerialComs:
-    """SerialComs package"""
+    """SerialComs class"""
     def __init__(self, port: str, baud: int) -> None:
         """Connect to serial port"""
         self.serial = serial.Serial(port=port, baudrate=baud)
