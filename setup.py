@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""Test, build, or install the Sitewatch package.
+"""Test, build, or install the SerialComs package.
 Run tests:
   python setup.py test
 Build and install:
@@ -10,7 +10,7 @@ Build and install:
 from distutils.util import convert_path
 from setuptools import setup
 
-VER_FILEPATH = convert_path('sitewatch/version.txt')
+VER_FILEPATH = convert_path('serialcoms/version.txt')
 with open(VER_FILEPATH) as file:
     __version__ = file.read()
 
